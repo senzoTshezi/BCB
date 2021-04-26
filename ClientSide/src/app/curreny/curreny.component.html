@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class="row">
+      <br><br><br>
+
+        <h3>CryptoCompare</h3>
+          <!-- <p >{{currency  | json}}</p> -->
+
+          <div *ngFor='let currency of currency | keyvalue'>
+            <button type="button" class="collapsible" style="cursor: default;">
+              SYMBOL: {{currency.key}}<br>
+              PRICES: {{currency.value | json}}
+            </button>
+            <br><br>
+         </div>
+    </div>
+    <br>
+</div>
